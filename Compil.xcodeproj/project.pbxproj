@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		959FAFCA137C2AF000E3A40F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 959FAFC9137C2AF000E3A40F /* main.c */; };
+		950A70AF137C333400BEC4D5 /* flex.l in Sources */ = {isa = PBXBuildFile; fileRef = 950A70AD137C333400BEC4D5 /* flex.l */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		950A70AD137C333400BEC4D5 /* flex.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = flex.l; sourceTree = "<group>"; };
 		959FAFC5137C2AF000E3A40F /* Compil */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Compil; sourceTree = BUILT_PRODUCTS_DIR; };
-		959FAFC9137C2AF000E3A40F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		959FAFCB137C2AF000E3A40F /* Compil.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Compil.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +57,7 @@
 		959FAFC8137C2AF000E3A40F /* Compil */ = {
 			isa = PBXGroup;
 			children = (
-				959FAFC9137C2AF000E3A40F /* main.c */,
-				959FAFCB137C2AF000E3A40F /* Compil.1 */,
+				950A70AD137C333400BEC4D5 /* flex.l */,
 			);
 			path = Compil;
 			sourceTree = "<group>";
@@ -114,7 +112,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959FAFCA137C2AF000E3A40F /* main.c in Sources */,
+				950A70AF137C333400BEC4D5 /* flex.l in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +159,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				YACC_GENERATE_DEBUGGING_DIRECTIVES = YES;
 			};
 			name = Debug;
 		};
@@ -172,6 +171,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				YACC_GENERATE_DEBUGGING_DIRECTIVES = YES;
 			};
 			name = Release;
 		};
@@ -194,6 +194,7 @@
 				959FAFD0137C2AF000E3A40F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
