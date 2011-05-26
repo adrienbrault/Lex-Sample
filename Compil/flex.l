@@ -1,19 +1,27 @@
 %{
+    
 int nb = 0;
+    
 %}
 
-%%
-[^ \n]+ {nb++;}
-\n {return 0;}
-.
+mot([^ \n"?.,;:"]+)
+
 %%
 
+{mot} {
+    nb++;
+}
+\n {
+    return 0;
+}
+.
+
+%%
 
 
 #include <stdio.h>
 
 int yywrap(){return 1;}
-
 
 int main (int argc, const char * argv[])
 {
