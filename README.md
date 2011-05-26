@@ -1,3 +1,4 @@
+If you want to compile a lex programm withtout XCode, here's how to do it:
 
 	vi flex.l
 
